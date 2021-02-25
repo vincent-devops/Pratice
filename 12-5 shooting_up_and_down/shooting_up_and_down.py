@@ -12,7 +12,10 @@ def run_game():
     pygame.display.set_caption("shooting")
 
     # 飞船
-    ship = Ship(screen)
+    ship = Ship(screen, ai_settings)
+
+    # 子弹
+    bullet = Bu
     # ship_image = pygame.image.load("images/ship.bmp")
     # 翻转图像
     # ship_image = pygame.transform.rotate(ship_image, 270)
