@@ -11,6 +11,9 @@ def check_keydown_events(event, ai_settings, screen, ship, bullets):
         ship.moving_left = True
     elif event.key == pygame.K_SPACE:
         fire_bullet(ai_settings, screen, ship, bullets)
+    elif event.key == pygame.K_q:
+        sys.exit()
+
 
 def check_keyup_events(event, ship):
     """响应松开"""
@@ -18,6 +21,7 @@ def check_keyup_events(event, ship):
         ship.moving_right = False
     elif event.key == pygame.K_LEFT:
         ship.moving_left = False
+
 
 def check_events(ai_settings, screen, ship, bullets):
     """响应按钮和鼠标事件"""
@@ -50,6 +54,7 @@ def update_screen(ai_settings, screen, ship, bullets):
         # 对编组中的每个精灵（即子弹）进行绘制
         bullet.draw_bullet()
     ship.blitme()
+
     # 重绘屏幕，以显示新元素
     pygame.display.flip()
 

@@ -34,7 +34,7 @@ class Ship():
             self.centery += self.ai_settings.ship_speed_factor
         self.rect.centery = self.centery
 
-    def blit(self):
+    def blitme(self):
         # 重绘飞船
         self.screen.blit(self.image, self.rect)
 

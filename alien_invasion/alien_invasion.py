@@ -5,7 +5,7 @@ from pygame.sprite import Group
 from settings import Settings
 from ship import Ship
 import game_functions as gf
-from heart import Heart
+# from heart import Heart
 
 def run_game():
     # 初始化pygame、设置和屏幕对象
